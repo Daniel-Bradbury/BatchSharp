@@ -9,7 +9,7 @@ namespace BatchSharp
         public static String[] line;
         public static bool NEW(String CommandName)
         {
-            if (line[0]==CommandName)
+            if (line[0].ToLower() == CommandName.ToLower())
             {
                 return true;
             }
