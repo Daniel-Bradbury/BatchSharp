@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace BatchSharp
 {
@@ -15,9 +14,14 @@ namespace BatchSharp
             }
             return false;
         }
+        public static String[] ARGS()
+        {
+            return line.Skip(1).ToArray();
+        }
         public static void RUN()
         {
             echo();
+
         }
     }
 }

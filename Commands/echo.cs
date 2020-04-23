@@ -8,7 +8,7 @@ namespace BatchSharp
         public static void echo()
         {
             if (Command.NEW("echo")) {
-                Console.WriteLine(String.Join(" ",line.Skip(1).ToArray()));
+                Console.WriteLine(String.Join(" ",ARGS()));
             }
         }
     }
