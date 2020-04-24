@@ -13,7 +13,7 @@ namespace BatchSharp
             StreamReader file = new StreamReader(args[0]);
             while ((sline = file.ReadLine()) != null)
             {
-                line = sline.Split(" ");
+                line = sline.Split(' ');
                 Command.line = line;
                 Command.RUN();
             }

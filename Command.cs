@@ -21,7 +21,7 @@ namespace BatchSharp
         public static void RUN()
         {
             echo();
-
+            call();
         }
     }
 }
